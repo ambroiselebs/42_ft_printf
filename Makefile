@@ -6,7 +6,7 @@
 #    By: aberenge <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/22 16:49:03 by aberenge          #+#    #+#              #
-#    Updated: 2024/10/22 17:32:37 by aberenge         ###   ########.fr        #
+#    Updated: 2024/10/23 18:09:08 by aberenge         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,9 +25,6 @@ $(NAME): $(OBJ)
 
 %.o: %.c
 	$(CC) $(CFLAGS) $(INCLUDE) -c $< -o $@
-
-tester:
-	${CC} ${CFLAGS} ${SRC} test.c $<
 
 clean:
 	rm -f $(OBJ)

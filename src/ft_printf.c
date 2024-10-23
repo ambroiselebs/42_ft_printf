@@ -6,7 +6,7 @@
 /*   By: aberenge <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 16:40:06 by aberenge          #+#    #+#             */
-/*   Updated: 2024/10/22 18:00:45 by aberenge         ###   ########.fr       */
+/*   Updated: 2024/10/23 18:09:22 by aberenge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	ft_parser(char c, int *counter, va_list *args)
 	if (c == 's')
 		*counter += ft_putstr_fd(va_arg(*args, char *), 1);
 	if (c == 'p')
-		*counter += ft_print_pointer(va_arg(*args, uintptr_t), 1);
+		*counter += ft_print_pointer(va_arg(*args, unsigned long long), 1);
 	if (c == 'i' || c == 'd')
 		*counter += ft_putnbr_fd(va_arg(*args, int), 1);
 	if (c == 'u')

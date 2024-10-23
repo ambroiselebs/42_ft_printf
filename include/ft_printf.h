@@ -6,7 +6,7 @@
 /*   By: aberenge <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 16:40:14 by aberenge          #+#    #+#             */
-/*   Updated: 2024/10/22 18:02:05 by aberenge         ###   ########.fr       */
+/*   Updated: 2024/10/23 18:09:02 by aberenge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ int		ft_print_hex_fd_min(int nb, int fd);
 int		ft_putchar_fd(char c, int fd);
 int		ft_putnbr_fd(int nb, int fd);
 int		ft_putstr_fd(const char *str, int fd);
-int		ft_print_pointer(uintptr_t ptr, int fd);
+int		ft_print_pointer(unsigned long long addr, int fd);
 int		ft_putnbr_unsigned_fd(unsigned int n, int fd);
 
 #endif
